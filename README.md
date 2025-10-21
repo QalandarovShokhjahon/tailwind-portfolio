@@ -32,7 +32,7 @@ Sayt orqali siz mening loyihalarimni ko‘rishingiz, men haqimda bilib olishingi
 ---
 
 ## 🌍 Live Demo / Saytni Ko‘rish
-👉 [View My Portfolio](https://QalandarovShokhjahon.github.io/)  
+👉 [View My Portfolio](https://qalandarovshokhjahon.github.io/tailwind-portfolio/)  
 
 ---
 
