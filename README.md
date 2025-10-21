@@ -36,13 +36,4 @@ Sayt orqali siz mening loyihalarimni ko‘rishingiz, men haqimda bilib olishingi
 
 ---
 
-## 📞 Contact Me / Bog‘lanish
-- 💌 Email: ShokhjaxonQalandarov@gmail.com  
-- 💼 LinkedIn: [Your LinkedIn Profile](#)  
-- 📱 Telegram: [@dev_ake](#)
-
----
-
----
-
 **© 2025 Shokhjahon Qalandarov — Created with HTML, Tailwind CSS, and passion 💙**
