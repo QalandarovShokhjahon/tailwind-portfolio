@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qalandarov-Shokhjahon</title>
+    <title>Shokhjahon-Qalandarov</title>
     <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
     <!-- Tailwind Link -->
@@ -13,21 +13,21 @@
 </head>
 <body>
     <!-- Topbar -->
-    <div style='font-family: "Montserrat", sans-serif;' class="fixed top-0 left-0 w-full bg-white flex justify-center items-center py-3 md:py-5 gap-10 font-[600] shadow-lg shadow-gray-200">
-            <a class="duration-300 hover:text-orange-400" href="#">HOME</a>
-            <a class="duration-300 hover:text-orange-400" href="#">PORTFOLIO</a>
-            <a class="duration-300 hover:text-orange-400" href="#">ABOUT</a>
-            <a class="duration-300 hover:text-orange-400" href="#">CONTACT</a>
-    </div>
+    <div class="flex justify-center items-center py-5 gap-10 shadow-lg shadow-gray-400 text-lg font-bold uppercase">
+        <a class="duration-300 hover:text-orange-700" href="#">Home</a>
+        <a class="duration-300 hover:text-orange-700" href="#">Portfolio</a>
+        <a class="duration-300 hover:text-orange-700" href="#">About</a>
+        <a class="duration-300 hover:text-orange-700" href="#">Contact</a>
+    </div>  
     <!-- Header -->
-     <div style='font-family: "Montserrat", sans-serif;' class="grid bg-[url('images/header-bg.jpg')] bg-cover bg-center">
-        <div class="text-white h-[100vh] py-[20%] px-[10%]">
-            <h3 class="text-7xl mb-3">Hello, I'm</h3>
-            <h1 class="text-7xl font-bold mb-3">SHOKHJAHON</h1>
-            <p class>AND THIS IS MY PORTFOLIO</p>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center pl-[10%] md:h-[90vh] bg-zinc-900 text-white">
+        <div>
+            <h1 class="text-7xl uppercase font-semibold mb-5 mt-5"><span class="font-light">Hello, I'm</span> Shokhjahon</h1>
+            <p class="uppercase text-base text-zinc-400">and this is My Portfolio</p>
+        </div>
+        <div>
+            <img src="images/header.webp" class="h-[90vh]" alt="">
         </div>
      </div>
-     <!-- Portfolio -->
-        
 </body>
 </html>
