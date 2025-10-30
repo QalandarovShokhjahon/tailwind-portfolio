@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+.font-nav {
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Portfolio thumbnails: use the same image for all cards */
+#portfolio .aspect-video {
+  background-image: url('images/techwebby.jpg');
+  background-size: cover;
+  background-position: center;
+}

@@ -1,33 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shokhjahon-Qalandarov</title>
+    <title>Shokhjahon Qalandarov - Portfolio</title>
     <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
     <!-- Tailwind Link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<body class="min-h-screen">
     <!-- Topbar -->
-    <div class="flex justify-center items-center py-5 gap-10 shadow-lg shadow-gray-400 text-lg font-bold uppercase">
-        <a class="duration-300 hover:text-orange-700" href="#">Home</a>
-        <a class="duration-300 hover:text-orange-700" href="#">Portfolio</a>
-        <a class="duration-300 hover:text-orange-700" href="#">About</a>
-        <a class="duration-300 hover:text-orange-700" href="#">Contact</a>
-    </div>  
+    <header class="bg-white/95 sticky top-0 z-50 border-b border-zinc-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex h-14 items-center">
+                <div class="flex-1"></div>
+                <nav class="hidden md:flex items-center gap-8 text-sm sm:text-base font-bold uppercase font-nav tracking-normal">
+                    <a class="duration-300 hover:text-orange-700" href="#home">Home</a>
+                    <a class="duration-300 hover:text-orange-700" href="#portfolio">Portfolio</a>
+                    <a class="duration-300 hover:text-orange-700" href="#about">About</a>
+                    <a class="duration-300 hover:text-orange-700" href="#contact">Contact</a>
+                </nav>
+                <button id="nav-toggle" class="md:hidden ml-auto inline-flex items-center justify-center w-9 h-9 rounded-md border border-zinc-300 text-zinc-700 hover:bg-zinc-100" aria-label="Open menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M3.75 6.75h16.5v1.5H3.75zM3.75 11.25h16.5v1.5H3.75zM3.75 15.75h16.5v1.5H3.75z"/></svg>
+                </button>
+                <div class="flex-1 hidden md:block"></div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <nav class="flex flex-col gap-3 text-sm font-bold uppercase font-nav tracking-normal">
+                    <a class="py-2 px-2 rounded hover:bg-zinc-100 duration-200" href="#home">Home</a>
+                    <a class="py-2 px-2 rounded hover:bg-zinc-100 duration-200" href="#portfolio">Portfolio</a>
+                    <a class="py-2 px-2 rounded hover:bg-zinc-100 duration-200" href="#about">About</a>
+                    <a class="py-2 px-2 rounded hover:bg-zinc-100 duration-200" href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
     <!-- Header -->
-     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center pl-[10%] md:h-[90vh] bg-zinc-900 text-white">
+    <div id="home" class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center min-h-[calc(100vh-3.5rem)] bg-zinc-900 text-white px-6 sm:px-10 md:pl-[10%] py-6 sm:py-10 md:py-0">
         <div>
-            <h1 class="text-7xl uppercase font-semibold mb-5 mt-5"><span class="font-light">Hello, I'm</span> Shokhjahon</h1>
-            <p class="uppercase text-base text-zinc-400">and this is My Portfolio</p>
+            <span class="text-4xl sm:text-5xl md:text-7xl font-light">Hello, I'm</span>
+            <h1 class="text-5xl sm:text-6xl md:text-7xl uppercase font-semibold mb-4 mt-4">Shokhjahon</h1>
+            <p class="uppercase text-sm sm:text-base text-zinc-400">and this is My Portfolio</p>
         </div>
         <div>
-            <img src="images/header.webp" class="h-[90vh]" alt="">
+            <img src="images/header.webp" class="w-full h-[calc(100vh-3.5rem)] object-cover" alt="">
         </div>
-     </div>
+    </div>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="bg-zinc-900 text-white py-12 sm:py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-center mb-8 sm:mb-10">Portfolio</h2>
+            <div class="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <a href="https://qalandarovshokhjahon.github.io/techwebby-practice-website/" target="_blank" rel="noopener noreferrer" aria-label="Open project Techwebby Practice Website" class="group block rounded-xl overflow-hidden bg-zinc-800 ring-1 ring-zinc-700 hover:ring-orange-600 duration-300">
+                    <div class="aspect-video bg-zinc-700/60"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-1">Techwebby Practice Website</h3>
+                        <p class="text-sm text-zinc-300">Project URL: <span class="text-white group-hover:text-orange-400 duration-300">qalandarovshokhjahon.github.io/techwebby-practice-website</span></p>
+                    </div>
+                </a>
+                <a href="https://qalandarovshokhjahon.github.io/techwebby-practice-website/" target="_blank" rel="noopener noreferrer" aria-label="Open project Techwebby Practice Website" class="group block rounded-xl overflow-hidden bg-zinc-800 ring-1 ring-zinc-700 hover:ring-orange-600 duration-300">
+                    <div class="aspect-video bg-zinc-700/60"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-1">Techwebby Practice Website</h3>
+                        <p class="text-sm text-zinc-300">Project URL: <span class="text-white group-hover:text-orange-400 duration-300">qalandarovshokhjahon.github.io/techwebby-practice-website</span></p>
+                    </div>
+                </a>
+                <a href="https://qalandarovshokhjahon.github.io/techwebby-practice-website/" target="_blank" rel="noopener noreferrer" aria-label="Open project Techwebby Practice Website" class="group block rounded-xl overflow-hidden bg-zinc-800 ring-1 ring-zinc-700 hover:ring-orange-600 duration-300">
+                    <div class="aspect-video bg-zinc-700/60"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-1">Techwebby Practice Website</h3>
+                        <p class="text-sm text-zinc-300">Project URL: <span class="text-white group-hover:text-orange-400 duration-300">qalandarovshokhjahon.github.io/techwebby-practice-website</span></p>
+                    </div>
+                </a>
+                <a href="https://qalandarovshokhjahon.github.io/techwebby-practice-website/" target="_blank" rel="noopener noreferrer" aria-label="Open project Techwebby Practice Website" class="group block rounded-xl overflow-hidden bg-zinc-800 ring-1 ring-zinc-700 hover:ring-orange-600 duration-300">
+                    <div class="aspect-video bg-zinc-700/60"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-1">Techwebby Practice Website</h3>
+                        <p class="text-sm text-zinc-300">Project URL: <span class="text-white group-hover:text-orange-400 duration-300">qalandarovshokhjahon.github.io/techwebby-practice-website</span></p>
+                    </div>
+                </a>
+                <a href="https://qalandarovshokhjahon.github.io/techwebby-practice-website/" target="_blank" rel="noopener noreferrer" aria-label="Open project Techwebby Practice Website" class="group block rounded-xl overflow-hidden bg-zinc-800 ring-1 ring-zinc-700 hover:ring-orange-600 duration-300">
+                    <div class="aspect-video bg-zinc-700/60"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-1">Techwebby Practice Website</h3>
+                        <p class="text-sm text-zinc-300">Project URL: <span class="text-white group-hover:text-orange-400 duration-300">qalandarovshokhjahon.github.io/techwebby-practice-website</span></p>
+                    </div>
+                </a>
+                <a href="https://qalandarovshokhjahon.github.io/techwebby-practice-website/" target="_blank" rel="noopener noreferrer" aria-label="Open project Techwebby Practice Website" class="group block rounded-xl overflow-hidden bg-zinc-800 ring-1 ring-zinc-700 hover:ring-orange-600 duration-300">
+                    <div class="aspect-video bg-zinc-700/60"></div>
+                    <div class="p-4">
+                        <h3 class="font-semibold mb-1">Techwebby Practice Website</h3>
+                        <p class="text-sm text-zinc-300">Project URL: <span class="text-white group-hover:text-orange-400 duration-300">qalandarovshokhjahon.github.io/techwebby-practice-website</span></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-zinc-900 text-white py-12 sm:py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 grid gap-8 md:gap-10 md:grid-cols-2 items-center">
+            <div class="order-2 md:order-1">
+                <h2 class="text-3xl sm:text-4xl font-semibold mb-4 sm:mb-5">About Me</h2>
+                <p class="text-zinc-300 leading-7 mb-5 sm:mb-6">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <a href="#" class="inline-block bg-lime-500 text-zinc-900 font-semibold px-5 py-2 rounded-full hover:bg-lime-400 duration-200">Download CV</a>
+            </div>
+            <div class="order-1 md:order-2">
+                <img src="images/header.webp" alt="About" class="w-full max-w-xl rounded shadow-lg object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-zinc-900 text-white py-12 sm:py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-center mb-8 sm:mb-10">Contact</h2>
+            <div class="grid gap-8 sm:gap-10 md:grid-cols-2">
+                <!-- Form -->
+                <form class="space-y-3 sm:space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full bg-zinc-800 text-white placeholder-zinc-500 rounded-md px-4 py-3 outline-none ring-1 ring-zinc-700 focus:ring-orange-600 duration-200">
+                    <input type="email" placeholder="Your Email" class="w-full bg-zinc-800 text-white placeholder-zinc-500 rounded-md px-4 py-3 outline-none ring-1 ring-zinc-700 focus:ring-orange-600 duration-200">
+                    <input type="tel" placeholder="Your Phone" class="w-full bg-zinc-800 text-white placeholder-zinc-500 rounded-md px-4 py-3 outline-none ring-1 ring-zinc-700 focus:ring-orange-600 duration-200">
+                    <textarea rows="5" placeholder="Write a Message" class="w-full bg-zinc-800 text-white placeholder-zinc-500 rounded-md px-4 py-3 outline-none ring-1 ring-zinc-700 focus:ring-orange-600 duration-200"></textarea>
+                    <button type="submit" class="bg-lime-500 text-zinc-900 font-semibold px-6 py-2 rounded-full hover:bg-lime-400 duration-200">Send Message</button>
+                </form>
+                <!-- Details -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">My Contact Details</h3>
+                    <ul class="space-y-4 text-zinc-300">
+                        <li>
+                            <div class="text-sm uppercase text-zinc-400">Email</div>
+                            <a href="mailto:shokhjaxonqalandarov@gmail.com" class="hover:text-orange-400 duration-200">shokhjaxonqalandarov@gmail.com</a>
+                        </li>
+                        <li>
+                            <div class="text-sm uppercase text-zinc-400">Phone</div>
+                            <a href="tel:+998889580770" class="hover:text-orange-400 duration-200">+998 88 958 07 70</a>
+                        </li>
+                        <li>
+                            <div class="text-sm uppercase text-zinc-400">Telegram</div>
+                            <a href="https://t.me/dev_ake" class="hover:text-orange-400 duration-200">@dev_ake</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </section>
+
 </body>
+
 </html>
